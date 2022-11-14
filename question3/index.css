@@ -38,6 +38,12 @@ body {
 
 .btn {
   margin-top: 1em;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 8px;
+	cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }
 
 input {

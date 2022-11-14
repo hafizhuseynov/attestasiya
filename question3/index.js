@@ -49,7 +49,12 @@ let messenger = new Messenger("messenger");
 sendButton.addEventListener("click", () => {
   const author = authorInp.value;
   const message = messageInp.value;
+  if (!author || !message) {
+    console.error("Author or message is empty");
+    return;
+  }
+
+  messenger.send(author, message);
   authorInp.value = "";
   messageInp.value = "";
-  messenger.send(author, message);
 });
